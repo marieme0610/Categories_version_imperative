@@ -25,6 +25,10 @@ $categories =
     ]
 ];
 
-
+foreach ($categories as $indexCategorie => $categorie) {
+    if(empty($categorie['produits'])){
+        echo $categorie['nom']."\n";
+    }
+};
 
 ?>
