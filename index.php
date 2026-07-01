@@ -48,6 +48,31 @@ $categories = [
         return true;
  }
 
+ function rechercheCat(array $categories, string $key, string $value): int|bool {
+         foreach ($categories as $index  => $categorie ) {
+               if (($categorie[$key]) === $value) {
+                   return $index ;
+         }
+       } 
+       return false;
+ }
+
+ function verifUniqueEstVide(array $categories,string $smsSaisie, string $smsError,string $key): string{
+        
+     $bon = true;
+  do { 
+        
+        $value = saisiInfo($smsSaisie);
+        $estBon = ifVide($value,$smsError);
+        if($estBon){
+           
+       $estBon =rechercheCat($categories,$key,$value);
+}
+    } while (!$estBon);
+    return $value;
+ }
+
+
 
 
 
