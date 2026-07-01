@@ -3,26 +3,26 @@
 $categories = [
 
    0 =>      [
-            "code" => "coo0",
-            "nom" => "categorie0",
+            "code" => "ERT5",
+            "nom" => "Parfum",
             "produits" => [
                   0 => [
-                    "nom" => "produit1",
-                    "reference" => "ref1",
-                    "prix" => 3000,
-                    "quantite" => 5 
+                    "nom" => "victoriaSecret",
+                    "ref" => "555Y",
+                    "prix" => 15000,
+                    "quantite" => 284 
                   ],
                   1 => [
-                    "nom" => "produit2",
-                    "reference" => "ref2",
-                    "prix" => 2000,
-                    "quantite" => 3 
+                    "nom" => "Love me",
+                    "ref" => "FG5R",
+                    "prix" => 1500,
+                    "quantite" => 76 
                   ]
             ]
          ],
    1 =>      [
-            "code" => "coo1",
-            "nom" => "categorie1",
+            "code" => "A3E6",
+            "nom" => "soins-de-visage",
             "produits" => []
          ]
 ];
