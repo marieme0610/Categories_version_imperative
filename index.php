@@ -28,7 +28,13 @@ $categories = [
 ];
 
 
-
+ function affichProdZero(array $categories): void{
+      foreach ($categories as  $cat ) {
+    if (empty($cat["produits"])) {
+         echo $cat["nom"]."\n";
+    }
+ }
+ }
 
 
 
