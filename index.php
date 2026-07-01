@@ -36,6 +36,17 @@ $categories = [
  }
  }
 
+  function saisiInfo(string $message):string {
+     return readline($message);
+     
+ }
+ function ifVide(string $value,string $message):bool{
+     if (empty($value)) {
+            echo $message."\n";
+           return  false;
+        }
+        return true;
+ }
 
 
 
