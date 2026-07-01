@@ -73,6 +73,19 @@ $categories = [
  }
 
 
+ function ajoutCat(): void{
+     global $categories;
+   $code = verifUniqueEstVide($categories,"Entrez le code :", "champs obligatoire : ", "code");
+   $nom = verifUniqueEstVide($categories,"Entrez le nom :", "champs obligatoire : ", "nom");
+
+    $categorie  =   [
+            "code" => $code,
+            "nom" => $nom,
+            "produits" => []
+         ];
+
+         $categories[] = $categorie;
+ }
 
 
 
