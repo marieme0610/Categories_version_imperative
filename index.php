@@ -172,5 +172,28 @@ $categories[$indexCategorie]['produits'][]= $newProduit;
 print_r($categories);
 
 
+     $produits = [];
+     do {
+         $prod =   [
+                    "nom" => readline("Entrer votre nom du produit : \n"),
+                    "ref" => readline("Entrer la reference du produit : \n"),
+                    "prix" => (int)readline("Entrer le prix : du produit\n"),
+                    "quantite" => (int)readline("Entrer la quantité du produit: \n")
+                  ];
+          $produits[]= $produit;
+
+          $choix = strtolower(readline(" Voulez voulez vous continuer a jouter des produits oui ou non : "));
+          
+     } while ($choix === "oui");
+
+    $categorie  =   [
+            "code" => $code,
+            "nom" => $nom,
+            "produits" =>  $produits 
+         ];
+
+         $categories[] = $categorie;
+
+
 
 ?>
